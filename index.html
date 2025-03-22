@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Stock Trader</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">   
+    <!-- Meta Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '857431976186273');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=857431976186273&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+
+<body>
+    <div class="container">
+        <img src="./sunil.png" alt="Profile" class="profile-img">
+        <h1> 👑 Trade With Sunil 🤟 </h1>
+        <div><span id="subscriberCount">0</span> Subscribers</div>
+
+        <div class="section">👑ASIA's NO 1 LOSS COVER TRADER 👑</div>
+        <a href="https://t.me/+Epwy3uDpVpMzNDQ1" target="_blank" class="btn">
+            <i class="fa-brands fa-telegram"></i> 
+            Join Free Telegram Channel            
+        </a>         
+        <div class="section">🤩6+ YEARS EXPERIENCE IN TRADING🤩</div>
+        <a href="https://t.me/+Epwy3uDpVpMzNDQ1" target="_blank" class="btn">
+            <i class="fa-brands fa-telegram"></i> 
+            Join Free Telegram Channel
+        </a> 
+        <div class="section">RECOVER ALL YOUR LOSSES NOW EARN 3-10K DAILY💰</div>
+        <div class="section">🤩✅DAILY 3-4 FREE CALLS✅🤩</div>        
+    </div>
+</body>
+<script>
+    function animateCount(target, endValue, duration) {
+        let startValue = 0;
+        let startTime = null;
+
+        function updateCount(timestamp) {
+            if (!startTime) startTime = timestamp;
+            let progress = timestamp - startTime;
+            let percentage = Math.min(progress / duration, 1);
+
+            let count = Math.floor(percentage * endValue);
+            target.innerText = count.toLocaleString(); // Add commas for readability
+
+            if (percentage < 1) {
+                requestAnimationFrame(updateCount);
+            }
+        }
+
+        requestAnimationFrame(updateCount);
+    }
+
+    window.onload = function () {
+        let counterElement = document.getElementById("subscriberCount");
+        animateCount(counterElement, 90689, 5000); // 5 seconds duration
+    };
+</script>
+
+</html>
